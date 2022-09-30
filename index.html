@@ -9,9 +9,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>NLW eSports</title>
 
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./src/css/reset.css"> 
+        <link rel="stylesheet" href="./src/css/styles.css"> 
+        <link rel="stylesheet" href="./src/css/switchChangeTheme.css">
+        <link rel="stylesheet" href="./src/css/responsive.css">
+        <script defer src="./src/js/changeTheme.js"></script>
     </head>
-    <body>
+    <body>        
+        <div class="wrapper">
+            <div class="switch">
+                <div class="ball"></div>
+
+                <div class="sun">
+                    <svg width="8.0rem" height="8.0rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.4341 40.0769C20.4341 50.9085 29.2453 59.7198 40.0769 59.7198C50.9085 59.7198 59.7198 50.9085 59.7198 40.0769C59.7198 29.2453 50.9085 20.4341 40.0769 20.4341C29.2453 20.4341 20.4341 29.2453 20.4341 40.0769ZM40.0769 28.2802C46.5814 28.2802 51.8736 33.5725 51.8736 40.0769C51.8736 46.5814 46.5814 51.8736 40.0769 51.8736C33.5725 51.8736 28.2802 46.5814 28.2802 40.0769C28.2802 33.5725 33.5725 28.2802 40.0769 28.2802ZM36.146 67.5385H43.9922V79.3077H36.146V67.5385ZM36.146 0.846161H43.9922V12.6154H36.146V0.846161ZM0.83831 36.1539H12.6075V44H0.83831V36.1539ZM67.5306 36.1539H79.2999V44H67.5306V36.1539ZM9.55146 65.0395L17.8684 56.7147L23.4195 62.2619L15.1026 70.5867L9.55146 65.0395ZM56.7108 17.888L65.0355 9.56324L70.5828 15.1105L62.258 23.4352L56.7108 17.888ZM17.8802 23.4392L9.55539 15.1144L15.1065 9.56716L23.4235 17.8919L17.8802 23.4392ZM70.5828 65.0434L65.0355 70.5906L56.7108 62.2659L62.258 56.7186L70.5828 65.0434Z"
+                            fill="#F39C12" />
+                    </svg>
+                </div>
+    
+                <div class="moon">
+                    <svg width="7.8rem" height="7.9rem" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M72.3725 44.1765C69.714 44.8826 66.975 45.24 64.2243 45.2397C55.8485 45.2397 47.9828 41.9835 42.0746 36.0754C38.1949 32.1733 35.4056 27.3225 33.9849 22.0064C32.5642 16.6904 32.5616 11.0948 33.9774 5.77746C34.1542 5.11263 34.1531 4.41299 33.9741 3.74872C33.7952 3.08446 33.4447 2.47893 32.9578 1.99288C32.471 1.50683 31.8649 1.15734 31.2003 0.97948C30.5358 0.80162 29.8361 0.80164 29.1716 0.979537C22.5148 2.75349 16.4415 6.24676 11.5609 11.1089C-3.73124 26.4011 -3.73124 51.293 11.5609 66.593C15.1958 70.2481 19.5194 73.146 24.2816 75.1191C29.0439 77.0921 34.1501 78.1011 39.3049 78.0876C44.4583 78.1021 49.5634 77.0939 54.3244 75.1215C59.0854 73.1491 63.4077 70.2516 67.0411 66.5969C71.9069 61.7154 75.4018 55.6389 77.1744 48.9784C77.3505 48.3138 77.349 47.6147 77.1701 46.9509C76.9913 46.2871 76.6413 45.6819 76.1552 45.1957C75.6691 44.7096 75.0638 44.3596 74.4 44.1808C73.7362 44.0019 73.0371 44.0004 72.3725 44.1765ZM61.4978 61.0497C58.5906 63.9728 55.1327 66.2902 51.3239 67.868C47.5152 69.4458 43.4314 70.2525 39.3088 70.2415C35.1849 70.2517 31.0998 69.4443 27.2898 67.8659C23.4798 66.2875 20.0206 63.9694 17.1121 61.0458C4.87991 48.8097 4.87991 28.8962 17.1121 16.6601C19.4757 14.2991 22.2046 12.3345 25.1936 10.8422C24.7561 16.4877 25.5426 22.1611 27.4993 27.4748C29.456 32.7884 32.5369 37.617 36.5313 41.6305C40.536 45.6374 45.3631 48.7268 50.679 50.685C55.9948 52.6432 61.6726 53.4236 67.3196 52.9721C65.8191 55.956 63.854 58.6825 61.4978 61.0497Z"
+                            fill="#F1C40F" />
+                    </svg>
+                    <div class="stars">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                </div> 
+            </div>
+        </div>
 
         <header>
             <div>
@@ -59,6 +91,54 @@
                                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/32507-90x120.jpg" alt="Imagem do jogo Smite">
                             </a>
                         </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Cyberpunk%202077">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/65876_IGDB-144x192.jpg" alt="Imagem do jogo Cyberpunk2077">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/VALORANT">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg" alt="Imagem do jogo Valorant">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Fortnite">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/33214-188x250.jpg" alt="Imagem do jogo Fortnite">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/League%20of%20Legends">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" alt="Imagem do jogo League of Legends">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Garena%20Free%20Fire">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/502732_IGDB-90x120.jpg" alt="Imagem do jogo Free Fire">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Call%20of%20Duty%3A%20Warzone">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/512710-90x120.jpg" alt="Imagem do jogo Call of Duty: Warzone">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -66,7 +146,7 @@
             <section>
                 <div>
                     <h2>Canais e streamers</h2>
-                    <p>Listade canais e transmissões que não perco!</p>
+                    <p>Lista de canais e transmissões que não perco!</p>
 
                     <ul class="channel-list">
                         <li>
@@ -76,6 +156,38 @@
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/9ce11a2b-ec84-44b1-9c76-b8d29df5fef0-profile_image-150x150.png" alt="Imagem de Mayk Brito">
                             </a>
                         </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/dieegosf">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/ba672d8b-41f1-4338-bde2-2178f0828c32-profile_image-70x70.png" alt="Imagem de dieegosf">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/birobirobiro">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b9593cd7-d6f1-478f-b9c5-d7cce38c9257-profile_image-70x70.png" alt="Imagem de birobirobiro">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/rocketseat_oficial">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/32092d00-2638-422d-8a24-c609354e8a9d-profile_image-70x70.png" alt="Imagem de rocketseat_oficial">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/devopsheroes">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/35f31e96-5d0a-40e5-b843-ec8230a9a170-profile_image-70x70.png" alt="Imagem de DevOpsHeroes">
+                            </a>
+                        </li>  
 
                         <li>
                             <a 
@@ -91,8 +203,48 @@
                             href="https://www.twitch.tv/smzinho">
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/33aba100-11ff-4207-aff3-ef848ddbb7e8-profile_image-150x150.png" alt="Imagem de Smizinho">
                             </a>
-                        </li>
+                        </li> 
                         
+                        
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/alanzoka">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-150x150.png" alt="Imagem de alanzoka">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/ratoborrachudo">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e0e33c68-f53d-4308-a780-62b1bfd09d17-profile_image-150x150.png" alt="Imagem de RatoBorrachudo">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/tioorochitwitch">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b99a08d2-29ab-4ff1-99eb-01246d41efb7-profile_image-150x150.png" alt="Imagem de tioorochitwitch">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/gordox">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/36e2e2aa-55f7-4e92-b5bb-e8ab4cbcb529-profile_image-150x150.png" alt="Imagem de gORDOX">
+                            </a>
+                        </li>  
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/mucamuricoca">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/mucamuricoca-profile_image-d1b51b3e82bee7e3-150x150.jpeg" alt="Imagem de MucaMuricoca">
+                            </a>
+                        </li>  
                     </ul>
                 </div>
             </section>
@@ -106,45 +258,42 @@
                         <li>
                             <a 
                             target="_blank"
-                            href="https://www.twitch.tv/maykbrito">
-                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21.2824 25H15.8426C15.6011 25.0001 15.3678 25.0844 15.1852 25.2375L9.28125 30V25H6.1875C5.914 25 5.65169 24.8946 5.4583 24.7071C5.2649 24.5196 5.15625 24.2652 5.15625 24V6C5.15625 5.73478 5.2649 5.48043 5.4583 5.29289C5.65169 5.10536 5.914 5 6.1875 5H26.8125C27.086 5 27.3483 5.10536 27.5417 5.29289C27.7351 5.48043 27.8438 5.73478 27.8438 6V19.5375C27.8417 19.6832 27.8072 19.8267 27.7427 19.9583C27.6782 20.0899 27.5851 20.2065 27.4699 20.3L21.9398 24.7625C21.7572 24.9156 21.5239 24.9999 21.2824 25V25Z" stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M21.6562 11V17" stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15.4688 11V17" stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                            href="https://github.com/leonardoxp9d"
+                            alt="icone do Github">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="50" height="50"
+                                viewBox="0 0 64 64"
+                                style=" fill:#000000;">
+                                    <linearGradient id="KpzH_ttTMIjq8dhx1zD2pa_52539_gr1" x1="30.999" x2="30.999" y1="16" y2="55.342" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                        <stop offset="0" stop-color="#6dc7ff"></stop>
+                                        <stop offset="1" stop-color="#e6abff"></stop>
+                                    </linearGradient>
+                                    <path fill="url(#KpzH_ttTMIjq8dhx1zD2pa_52539_gr1)" d="M25.008,56.007c-0.003-0.368-0.006-1.962-0.009-3.454l-0.003-1.55 c-6.729,0.915-8.358-3.78-8.376-3.83c-0.934-2.368-2.211-3.045-2.266-3.073l-0.124-0.072c-0.463-0.316-1.691-1.157-1.342-2.263 c0.315-0.997,1.536-1.1,2.091-1.082c3.074,0.215,4.63,2.978,4.694,3.095c1.569,2.689,3.964,2.411,5.509,1.844 c0.144-0.688,0.367-1.32,0.659-1.878C20.885,42.865,15.27,40.229,15.27,30.64c0-2.633,0.82-4.96,2.441-6.929 c-0.362-1.206-0.774-3.666,0.446-6.765l0.174-0.442l0.452-0.144c0.416-0.137,2.688-0.624,7.359,2.433 c1.928-0.494,3.969-0.749,6.074-0.759c2.115,0.01,4.158,0.265,6.09,0.759c4.667-3.058,6.934-2.565,7.351-2.433l0.451,0.145 l0.174,0.44c1.225,3.098,0.813,5.559,0.451,6.766c1.618,1.963,2.438,4.291,2.438,6.929c0,9.591-5.621,12.219-10.588,13.087 c0.563,1.065,0.868,2.402,0.868,3.878c0,1.683-0.007,7.204-0.015,8.402l-2-0.014c0.008-1.196,0.015-6.708,0.015-8.389 c0-2.442-0.943-3.522-1.35-3.874l-1.73-1.497l2.274-0.253c5.205-0.578,10.525-2.379,10.525-11.341c0-2.33-0.777-4.361-2.31-6.036 l-0.43-0.469l0.242-0.587c0.166-0.401,0.894-2.442-0.043-5.291c-0.758,0.045-2.568,0.402-5.584,2.447l-0.384,0.259l-0.445-0.123 c-1.863-0.518-3.938-0.796-6.001-0.806c-2.052,0.01-4.124,0.288-5.984,0.806l-0.445,0.123l-0.383-0.259 c-3.019-2.044-4.833-2.404-5.594-2.449c-0.935,2.851-0.206,4.892-0.04,5.293l0.242,0.587l-0.429,0.469 c-1.536,1.681-2.314,3.712-2.314,6.036c0,8.958,5.31,10.77,10.504,11.361l2.252,0.256l-1.708,1.49 c-0.372,0.325-1.03,1.112-1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592-5.839,2.162-8.548-2.485 c-0.015-0.025-0.544-0.945-1.502-1.557c0.646,0.639,1.433,1.673,2.068,3.287c0.066,0.19,1.357,3.622,7.28,2.339l1.206-0.262 l0.012,3.978c0.003,1.487,0.006,3.076,0.009,3.444L25.008,56.007z"/>
+                                    <linearGradient id="KpzH_ttTMIjq8dhx1zD2pb_52539_gr2" x1="32" x2="32" y1="5" y2="59.167" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+                                        <stop offset="0" stop-color="#1a6dff"></stop>
+                                        <stop offset="1" stop-color="#c822ff"></stop>
+                                    </linearGradient>
+                                    <path fill="url(#KpzH_ttTMIjq8dhx1zD2pb_52539_gr2)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8 C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/>
+                                </svg>                                  
                             </a>
                         </li>
 
                         <li>
                             <a 
                             target="_blank"
-                            href="https://www.twitter.com/maykbrito">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z" stroke="#2871FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a 
-                            target="_blank"
-                            href="https://www.instagram.com/maykbrito">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="#FA41FE" stroke-width="2" stroke-miterlimit="10"/>
-                                    <path d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z" stroke="#FA41FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z" fill="#FA41FE"/>
-                                </svg>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a 
-                            target="_blank"
-                            href="https://www.youtube.com/maykbrito">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 16L14 12V20L20 16Z" stroke="#F40000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M3 16C3 19.725 3.3875 21.9 3.675 23.025C3.75427 23.3302 3.90418 23.6126 4.11262 23.8493C4.32106 24.0859 4.58221 24.2703 4.875 24.3875C9.0625 25.9875 16 25.95 16 25.95C16 25.95 22.9375 25.9875 27.125 24.3875C27.4178 24.2703 27.6789 24.0859 27.8874 23.8493C28.0958 23.6126 28.2457 23.3302 28.325 23.025C28.6125 21.9 29 19.725 29 16C29 12.275 28.6125 10.1 28.325 8.975C28.2457 8.66975 28.0958 8.38741 27.8874 8.15074C27.6789 7.91407 27.4178 7.7297 27.125 7.6125C22.9375 6.0125 16 6.05 16 6.05C16 6.05 9.0625 6.0125 4.875 7.6125C4.58221 7.7297 4.32106 7.91407 4.11262 8.15074C3.90418 8.38741 3.75427 8.66975 3.675 8.975C3.3875 10.1 3 12.275 3 16Z" stroke="#F40000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            href="https://www.linkedin.com/in/leonardo-sl/"
+                            alt="icone do Linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="45" height="45"
+                                viewBox="0 0 171 171"
+                                style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,171.99654v-171.99654h171.99654v171.99654z" fill="none"/>
+                                        <g fill="#0288d1">
+                                            <path d="M27.36,10.30008c-5.77088,0 -10.82266,1.64131 -14.52164,4.62902c-3.69898,2.98772 -5.95828,7.4145 -5.95828,12.25055c0,9.38301 8.4029,16.64583 19.51137,17.07996c0.31333,0.1003 0.63962,0.15431 0.96855,0.16031c5.9972,0 11.10197,-1.75793 14.74875,-4.86949c3.64678,-3.11156 5.73117,-7.59759 5.73117,-12.37078c-0.0005,-0.06239 -0.00273,-0.12476 -0.00668,-0.18703c-0.52675,-9.44226 -8.93149,-16.69254 -20.47324,-16.69254zM27.36,17.05992c8.92302,0 13.32392,4.38124 13.70004,10.20656c-0.02428,2.84639 -1.12621,5.26421 -3.33316,7.14727c-2.23135,1.90387 -5.67657,3.24633 -10.36687,3.24633c-8.89865,0 -13.72008,-4.83092 -13.72008,-10.48043c0,-2.82476 1.1607,-5.14718 3.44672,-6.99363c2.28602,-1.84645 5.78424,-3.12609 10.27336,-3.12609zM10.26,51.3c-1.88874,0.00019 -3.41981,1.53126 -3.42,3.42v99.18c0.00019,1.88874 1.53126,3.41981 3.42,3.42h34.2c1.88874,-0.00019 3.41981,-1.53126 3.42,-3.42v-31.92891v-67.25109c-0.00019,-1.88874 -1.53126,-3.41981 -3.42,-3.42zM61.56,51.3c-1.88874,0.00019 -3.41981,1.53126 -3.42,3.42v99.18c0.00019,1.88874 1.53126,3.41981 3.42,3.42h34.2c1.88874,-0.00019 3.41981,-1.53126 3.42,-3.42v-54.72v-0.855v-0.855c0,-6.64993 5.32007,-11.97 11.97,-11.97c6.64993,0 11.97,5.32007 11.97,11.97v56.43c0.00019,1.88874 1.53126,3.41981 3.42,3.42h34.2c1.88874,-0.00019 3.41981,-1.53126 3.42,-3.42v-58.14c0,-14.11271 -4.14542,-25.29277 -11.13504,-32.9175c-6.98961,-7.62473 -16.74066,-11.5425 -27.21305,-11.5425c-13.35249,0 -21.42793,4.87718 -26.63191,8.89734v-5.47734c-0.00019,-1.88874 -1.53126,-3.41981 -3.42,-3.42zM13.68,58.14h27.36v63.83109v28.50891h-27.36zM64.98,58.14h27.36v9.02426c0.00045,1.41663 0.87414,2.68638 2.19707,3.19303c1.32293,0.50665 2.82128,0.14535 3.7679,-0.90858c0,0 10.14269,-11.30871 27.50695,-11.30871c8.79931,0 16.51319,3.15416 22.16988,9.32484c5.65669,6.17069 9.3382,15.50957 9.3382,28.29516v54.72h-27.36v-53.01c0.0043,-0.48261 -0.09359,-0.96066 -0.28723,-1.40273c-0.75909,-9.66401 -8.67205,-17.40727 -18.52277,-17.40727c-10.34747,0 -18.81,8.46253 -18.81,18.81v0.855v0.855v51.3h-27.36z"/>
+                                        </g>
+                                    </g>
+                                </svg>                            
                             </a>
                         </li>
                     </ul>

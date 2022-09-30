@@ -1,0 +1,119 @@
+:root {
+  --starLight: #f1f1f1;
+  font-size: 20%; 
+}
+  
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  justify-content: space-between;
+  height: 0vh;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.switch {
+  position: relative;
+  width: 23.5rem;
+  height: 10.2rem;
+  padding-inline: 1.2rem;
+  padding-block: 0.8rem;
+  border-radius: 5.9rem;
+  background-color: #121214;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  top: 0.6rem;
+  transform: translateX(12.5rem);
+  width: 9rem;
+  height: 9rem;
+  border-radius: 10rem;
+  background: #fff;
+  transition: transform 0.4s;
+  z-index: 30;
+}
+
+
+.stars > .star {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #fff;
+  border-radius: 50rem;
+  position: absolute;
+}
+
+.star {
+  right: 3rem;
+  bottom: 8.5rem;
+  animation: glowStar 2.7s alternate-reverse infinite;
+}
+
+.star:nth-child(2) {
+  right: 4rem;
+  bottom: 6.7rem;
+  animation: glowStar 4s alternate-reverse infinite;
+}
+
+.star:nth-child(3) {
+  right: 2.1rem;
+  bottom: 2rem;
+  animation: glowStar 3.1s alternate-reverse infinite;
+}
+
+.star:nth-child(4) {
+  right: 5rem;
+  bottom: 3rem;
+  animation: glowStar 3.2s alternate-reverse infinite;
+}
+
+.star:nth-child(5) {
+  right: 7.2rem;
+  bottom: 1.4rem;
+  animation: glowStar 5.2s alternate-reverse infinite;
+}
+
+body.light {
+  background-color: #c6e9f3;
+  transition: background 0.6s;
+}
+
+body.light .ball {
+  transform: translateX(-0.5rem);
+}
+
+body.light section div {
+  background-color: #ebebf0;
+  transition: background 0.6s;
+}
+
+body.light section h2 {
+  color: #7e59fa;
+  transition: color 0.6s;
+}
+
+body.light section p {
+  color: #696970;
+  transition: color 0.6s;
+}
+
+/* animation */
+
+@keyframes glowStar {
+  50% {
+    background: transparent;
+  }
+
+  80% {
+    background: var(--starLight);
+  }
+
+  100% {
+    background: var(--starLight);
+    filter: drop-shadow(0 0 0.7rem #fff);
+  }
+}
