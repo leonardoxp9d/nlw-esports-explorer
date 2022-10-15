@@ -27,5 +27,5 @@ Projeto Original: https://maykbrito.github.io/nlw-esports-explorer/
 - Git e Github
 
 ## ✉️ Contato
-leonardo.soares.lima@gmail.com
+leonardo.soares.lim@gmail.com
 
